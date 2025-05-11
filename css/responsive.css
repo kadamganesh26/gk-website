@@ -1,0 +1,152 @@
+/*
+  Responsive CSS File
+  RK Corporation - IT Hardware Business Website
+*/
+
+/* Tablet Styles (768px to 1023px) */
+@media (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-text,
+  .about-image {
+    flex: none;
+    width: 100%;
+  }
+  
+  .about-image {
+    order: -1;
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .contact-info,
+  .contact-form-container {
+    flex: none;
+    width: 100%;
+  }
+  
+  .contact-info {
+    margin-bottom: var(--spacing-6);
+  }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+  section {
+    padding: var(--spacing-10) 0;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--primary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8);
+    transition: right var(--transition-slow);
+    z-index: 1000;
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+  
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-options {
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+  
+  .whatsapp-float {
+    bottom: var(--spacing-4);
+    right: var(--spacing-4);
+  }
+  
+  .whatsapp-float a {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+  .nav-menu {
+    width: 80%;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.25rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RK Corporation - Your Trusted IT Hardware Partner</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <script src="js/main.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <h1>RK Corporation</h1>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate-fade-in">Quality Computers at Affordable Prices</h1>
+        <p class="animate-fade-in delay-1">Your trusted partner for premium refurbished laptops and workstations</p>
+        <div class="hero-buttons animate-fade-in delay-2">
+          <a href="#products" class="btn btn-primary">View Products</a>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hot-deals" class="hot-deals-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🔥 HOT DEALS – LIMITED STOCK 🔥</h2>
+        <p>Premium devices at unbeatable prices. Don't miss these limited offers!</p>
+      </div>
+      
+      <div class="search-filter">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <div class="filter-options">
+          <select id="brand-filter">
+            <option value="all">All Brands</option>
+            <option value="lenovo">Lenovo</option>
+            <option value="dell">Dell</option>
+            <option value="hp">HP</option>
+            <option value="apple">Apple</option>
+            <option value="microsoft">Microsoft</option>
+          </select>
+          <select id="price-filter">
+            <option value="all">All Prices</option>
+            <option value="0-20000">Under ₹20,000</option>
+            <option value="20000-30000">₹20,000 - ₹30,000</option>
+            <option value="30000-50000">₹30,000 - ₹50,000</option>
+            <option value="50000+">₹50,000+</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="products-grid" id="hot-deals-grid"></div>
+      
+      <div class="view-more-container">
+        <a href="#products" class="btn btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Product Range</h2>
+        <p>Explore our extensive collection of premium refurbished computers</p>
+      </div>
+      <div class="products-grid" id="all-products-grid"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About RK Corporation</h2>
+          <p>Since our establishment, RK Corporation has been delivering premium quality refurbished computers and IT hardware to businesses and individuals across India.</p>
+          <p>We take pride in our meticulous refurbishment process that ensures every device meets the highest standards of performance and reliability.</p>
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>Premium quality refurbished devices</li>
+            <li>Extensive testing and quality assurance</li>
+            <li>Pan-India delivery</li>
+            <li>Dedicated customer support</li>
+            <li>Competitive pricing</li>
+            <li>Wide range of premium brands</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="RK Corporation Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Trusted by businesses and individuals across India</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The ThinkPad T490 I purchased from RK Corporation exceeded my expectations. The laptop was in pristine condition and performs flawlessly for my development work. Excellent value for money!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rahul Sharma">
+            <div class="author-info">
+              <h4>Rahul Sharma</h4>
+              <p>Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Our company bought 10 Dell Precision workstations for our design team. The quality, performance, and after-sales support from RK Corporation has been exceptional. Highly recommended!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Priya Patel">
+            <div class="author-info">
+              <h4>Priya Patel</h4>
+              <p>IT Manager, DesignHub Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Fast delivery, excellent condition, and incredible performance on the MacBook Air I purchased. RK Corporation delivers on their promise of quality and reliability."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vikram Singh">
+            <div class="author-info">
+              <h4>Vikram Singh</h4>
+              <p>Graduate Student</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Get in touch for inquiries, orders, or support</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <h3>Call Us</h3>
+            <p>+91 84598 39992</p>
+            <a href="tel:+918459839992" class="btn btn-sm btn-primary">Call Now</a>
+          </div>
+          <div class="contact-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </div>
+            <h3>Email Us</h3>
+            <p>info@rkcorporation.com</p>
+            <a href="mailto:info@rkcorporation.com" class="btn btn-sm btn-primary">Send Email</a>
+          </div>
+          <div class="contact-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+91 84598 39992</p>
+            <a href="https://wa.me/918459839992" class="btn btn-sm btn-primary">Message Now</a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="product">Interested In</label>
+              <select id="product" name="product">
+                <option value="">Select a product (optional)</option>
+                <option value="ThinkPad T440p">Lenovo ThinkPad T440p</option>
+                <option value="ThinkPad T490">Lenovo ThinkPad T490</option>
+                <option value="Dell Precision 3551">Dell Precision 3551 Workstation</option>
+                <option value="Dell Precision 5560">DELL PRECISION 5560</option>
+                <option value="Surface 3">Microsoft Surface 3 Touch</option>
+                <option value="HP ZBook">HP ZBook Workstation</option>
+                <option value="MacBook Air">Apple MacBook Air A2179</option>
+                <option value="Other">Other Products</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>RK Corporation</h2>
+          <p>Your Trusted IT Hardware Partner</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-products">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#products">Lenovo ThinkPad</a></li>
+              <li><a href="#products">Dell Precision</a></li>
+              <li><a href="#products">HP ZBook</a></li>
+              <li><a href="#products">Apple MacBook</a></li>
+              <li><a href="#products">Microsoft Surface</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li><a href="tel:+918459839992">+91 84598 39992</a></li>
+              <li><a href="mailto:info@rkcorporation.com">info@rkcorporation.com</a></li>
+              <li>PAN India Delivery Available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 RK Corporation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/918459839992" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+    </a>
+  </div>
+</body>
+</html>
